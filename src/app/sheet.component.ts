@@ -12,7 +12,6 @@ type AOA = any[][];
 export class SheetJSComponent {
   data: AOA = [];
   wopts: XLSX.WritingOptions = { bookType: 'xlsx', type: 'array' };
-  fileName: string = 'SheetJS.xlsx';
 
   onFileChange(evt: any) {
     const target: DataTransfer = <DataTransfer>(evt.target);
